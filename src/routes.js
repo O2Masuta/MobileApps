@@ -58,4 +58,6 @@ router.delete('/Skateparken/delete/:id', async(req, res) => {
     }
 });
 
+
+//routes exports
 module.exports = router;
