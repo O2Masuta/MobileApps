@@ -11,7 +11,7 @@ const corsOptions = {
     origin: '*',
     methods: ['GET', 'PUT', 'POST', 'DELETE', 'PATCH', 'HEAD'],
     optionsSuccessStatus: 200,
-    allowedHeaders: ['Content-Type', 'Authorization']
+    allowedHeaders: ['Content-Type: application/json', 'Authorization']
 }
 
 app.use(cors(corsOptions))
