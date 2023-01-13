@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 
 const cors = require('cors')
 const router = require('./routes');
+const router2 = require('./routes2')
 
 const app = express();
 
@@ -19,6 +20,7 @@ app.options('*', cors()) // include before other routes
 
 app.use(express.json());
 app.use(router);
+app.use(router2);
 
 
 
